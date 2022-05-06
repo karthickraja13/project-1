@@ -37,7 +37,7 @@ def select():
 def delete(id):
     mydb = mysql.connector.connect(host="localhost", port="3306", user="root", password="", database="python")
     data = mydb.cursor()
-    sql = "DELET FROM file where id=?"
+    sql = "DELETE FROM file where id=?"
     user = (id)
     data.execute(sql, user)
     data.close()
